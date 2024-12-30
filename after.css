@@ -1,0 +1,28 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+button{
+    content: '';
+    padding: 10px 20px;
+    background: linear-gradient(to right,indigo, yellow);
+    border: none;
+    color: white;
+    position: relative;
+    width: min-content;
+}
+button::after{
+    content: '';
+    padding: 10px 20px;
+    background: linear-gradient(to right, green,yellowgreen);
+    width:100%;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+button:hover::after{
+    width: 0px;
+}
